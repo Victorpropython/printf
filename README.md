@@ -1,4 +1,4 @@
-# 0x11. C - printf
+# 0x11. C - printf Project Done By Victor & Kalid
 
 ## General Requirement
 
@@ -95,7 +95,7 @@ i
   * You don’t have to handle precision
   * You don’t have to handle the length modifiers
 
-### [7. The big print gives and the small print takes away] (https://github.com/victorpropython/printf)
+### [7. The big print gives and the small print takes away](https://github.com/victorpropython/printf)
 
 * Handle the following flag characters for non-custom conversion specifiers:
 
