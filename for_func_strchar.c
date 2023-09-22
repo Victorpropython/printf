@@ -12,7 +12,7 @@
  * @len: Size specifier
  * Return: Number of chars printe
  */
-unsigned int convert_char(va_list args, buffer_t *display,
+unsigned int convert_alpha(va_list args, buffer_v *display,
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 	char c = va_arg(args, int);
@@ -38,7 +38,7 @@ unsigned int convert_char(va_list args, buffer_t *display,
  * @len: Size specifier
  * Return: Number of chars printed
  */
-unsigned int convert_string(va_list args, buffer_t *output,
+unsigned int convert_str(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 	int count;

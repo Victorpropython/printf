@@ -10,7 +10,7 @@
  * @len: Size specifier
  * Return: Number of chars printed
  */
-unsigned int convert_octal(va_list args, buffer_t *output,
+unsigned int change_octal(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 
@@ -55,7 +55,7 @@ unsigned int convert_octal(va_list args, buffer_t *output,
  * Return: Number of chars printed.
  */
 
-unsigned int convert_unsignd(va_list args, buffer_t *output,
+unsigned int change_unsignd(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 	unsigned int digit;
@@ -92,7 +92,7 @@ unsigned int convert_unsignd(va_list args, buffer_t *output,
  * @len: Size specification
  * Return: Number of chars printed
  */
-unsigned int convert_pointer(va_list args, buffer_t *output,
+unsigned int change_pointer(va_list args, buffer_v *output,
 		unsigned char flags, int wid, int prec, unsigned char len)
 {
 	char *nul = "(nil)";
