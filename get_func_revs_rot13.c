@@ -32,7 +32,7 @@ unsigned int change_reverse(va_list args, buffer_v *output,
 		count++;
 	ren += print_string_width(output, flags, wid, prec, count);
 	end = count - 1;
-	prec = (prec == -1) ? count : prec;
+	prec = (prec == 1) ? count : prec;
 
 	for (i = 0; end >= 0 && i < prec; i++)
 	{
