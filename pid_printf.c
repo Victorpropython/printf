@@ -13,18 +13,18 @@ unsigned int (*handle_specifiers(const char *specifier))(va_list, buffer_v *,
 	converter_v converters[] = {
 		{'c', convert_alpha},
 		{'s', convert_str},
-		{'%', percent_sign},
+		{'%', percent},
 		{'i', convert_digit},
 		{'d', convert_digit},
 		{'b', convert_bin_nums},
 		{'u', change_unsignd},
 		{'o', change_octal},
-		{'x', chnage_hexadecimal},
+		{'x', change_hexadecimal},
 		{'X', change_hexa_upper},
 		{'p', change_pointer},
 		{'S', change_non_printable},
 		{'r', change_reverse},
-		{'R', change_rot13string},
+		{'R', change_rot13str},
 		{'\0', NULL}
 
 	};
