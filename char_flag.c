@@ -3,7 +3,7 @@
 /**
  * handle_flags - Calculates active flags
  * @flag: Formatted string in which to print the arguments
- * @i: take a parameter.
+ * @m: take a parameter.
  * Return: Flags:
  */
 unsigned char handle_flags(const char *flag, char *m)
