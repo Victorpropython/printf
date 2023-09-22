@@ -36,7 +36,7 @@ int start_printf(const char *format, va_list args, buffer_v *output)
 			space = 0;
 			flags = handle_flags(format + i + 1, &space);
 			wid = handle_width(args, format + i +
-			space + 1, &space);			
+			space + 1, &space);
 			prec = handle_precision(args, format + i + space + 1,
 					&space);
 			len = handle_length(format + i + space + 1, &space);

@@ -47,7 +47,7 @@ typedef struct buffer_sh
 typedef struct converter_sh
 {
 	unsigned char specifier;
-	unsigned int (*func)(va_list, buffer_t *,
+	unsigned int (*func)(va_list, buffer_v *,
 			unsigned char, int, int, unsigned char);
 } converter_v;
 /**

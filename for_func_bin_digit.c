@@ -11,7 +11,7 @@
  * @len: Size specifier
  * Return: Number of chars printed
  */
-unsigned int convert_di(va_list args, buffer_t *output,
+unsigned int convert_digit(va_list args, buffer_v *output,
 		unsigned char flags, int wid, int prec, unsigned char len)
 {
 	char pad, space = ' ', neg = '-', plus = '+';
@@ -67,7 +67,7 @@ unsigned int convert_di(va_list args, buffer_t *output,
  * Return: Numbers of char printed.
  */
 
-unsigned int convert_binary(va_list args, buffer_t *output,
+unsigned int convert_bin_nums(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 	unsigned int sum;

@@ -11,7 +11,7 @@ i * @output: Container array to hold print
  * @len: Size specifier
  * Return: The hexadecimal number
  */
-unsigned int convert_hexadecimal(va_list args, buffer_t *output,
+unsigned int change_hexadecimal(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 	char *top = "0x";
@@ -50,7 +50,7 @@ unsigned int convert_hexadecimal(va_list args, buffer_t *output,
  * @len: Size specifier
  * Return: Number of chars printed
  */
-unsigned int convert_hexa_upper(va_list args, buffer_t *output,
+unsigned int change_hexa_upper(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 	char *top = "0X";
@@ -90,7 +90,7 @@ unsigned int convert_hexa_upper(va_list args, buffer_t *output,
  * @len: Size specifier
  * Return: Number of chars printed
  */
-unsigned int convert_hexa_upper(va_list args, buffer_t *output,
+unsigned int convert_hexa_upper(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 	char *top = "0X";
