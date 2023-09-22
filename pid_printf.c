@@ -13,7 +13,7 @@ unsigned int (*handle_specifiers(const char *specifier))(va_list, buffer_v *,
 	converter_v converters[] = {
 		{'c', convert_alpha},
 		{'s', convert_str},
-		{'%', percent},
+		{'%', convert_percent},
 		{'i', convert_digit},
 		{'d', convert_digit},
 		{'b', convert_bin_nums},

@@ -71,9 +71,9 @@ unsigned int convert_str(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len);
 unsigned int convert_digit(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len);
-unsigned int convert_percent_sign(va_list args, buffer_v *output,
+unsigned int convert_percent(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len);
-unsigned int convert_bin_num(va_list args, buffer_v *output,
+unsigned int convert_bin_nums(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len);
 unsigned int change_unsignd(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len);
