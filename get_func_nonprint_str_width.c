@@ -11,7 +11,11 @@
  * @len: Size specifier
  * Return: Number of chars printed
  */
+<<<<<<< HEAD
 unsigned int change_non_printable(va_list args, buffer_v *output,
+=======
+
+>>>>>>> refs/remotes/origin/main
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 	int count, ind;

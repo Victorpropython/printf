@@ -12,7 +12,10 @@
  * Return: Numbers of chars printed
  */
 
+<<<<<<< HEAD
 unsigned int change_reverse(va_list args, buffer_v *output,
+=======
+>>>>>>> refs/remotes/origin/main
 		unsigned char flags, int wid, int prec, unsigned char len)
 {
 	char *str, *null = "(null)";
@@ -55,7 +58,11 @@ unsigned int change_reverse(va_list args, buffer_v *output,
  * @len: Size specifier
  * Return: Numbers of chars printed
  */
+<<<<<<< HEAD
 unsigned int change_rot13str(va_list args, buffer_v *output,
+=======
+unsigned int convert_rot13string(va_list args, buffer_v *output,
+>>>>>>> refs/remotes/origin/main
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 	char *str, *nul = "(null)";
