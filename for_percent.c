@@ -10,7 +10,7 @@
  * @len: Size specifier
  * Return: Number of chars printed
  */
-unsigned int percent_sign(va_list args, buffer_v *output,
+unsigned int convert_percent(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 	char percent = '%';

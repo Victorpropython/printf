@@ -22,7 +22,7 @@ unsigned int convert_ubase(buffer_v *output, unsigned long int num, char *base,
 		count++;
 
 	if (num >= count)
-		ren += change_ubase(output, num / count, base,
+		ren += convert_ubase(output, num / count, base,
 				flags, wid - 1, prec - 1);
 
 	else
@@ -74,7 +74,7 @@ unsigned int convert_sbase(buffer_v *output, long int num, char *base,
 		count++;
 
 	if (num >= count || num <= -count)
-		ren += change_sbase(output, num / count, base,
+		ren += convert_sbase(output, num / count, base,
 				flags, wid - 1, prec - 1);
 	else
 	{
