@@ -10,11 +10,11 @@
  */
 unsigned int _memcpy(buffer_t *output, const char *src, unsigned int m)
 {
-	unsigned int ind;
+	unsigned int inde;
 
-	for (ind = 0; ind < m; ind++)
+	for (inde = 0; inde < m; inde++)
 	{
-		*(output->buffer) = *(src + ind);
+		*(output->buffer) = *(src + inde);
 		(output->len)++;
 
 		if (output->len == 1024)
