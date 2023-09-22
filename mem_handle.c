@@ -8,7 +8,7 @@
  *
  *Return: The number of bytes needed to be moved
  */
-unsigned int _memcpy(buffer_t *output, const char *src, unsigned int m)
+unsigned int _memcpy(buffer_v *output, const char *src, unsigned int m)
 {
 	unsigned int inde;
 
@@ -35,11 +35,11 @@ unsigned int _memcpy(buffer_t *output, const char *src, unsigned int m)
  *
  *Return: To return the address to pointer
  */
-buffer_t *init_buffer(void)
+buffer_v *init_buffer(void)
 {
-	buffer_t *output;
+	buffer_v *output;
 
-	output = malloc(sizeof(buffer_t));
+	output = malloc(sizeof(buffer_v));
 
 	if (output == NULL)
 	{
@@ -61,7 +61,7 @@ buffer_t *init_buffer(void)
  *
  *@output:The buffer to be free
  */
-void free_buffer(buffer_t *output)
+void free_buffer(buffer_v *output)
 {
 	free(output->start);
 	free(output);
