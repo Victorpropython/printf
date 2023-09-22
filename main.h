@@ -27,7 +27,7 @@
 #define LONG 2
 
 /**
- * struct buffer_s - A new type defining a buffer struct.
+ * struct buffer_sh - A new type defining a buffer struct.
  * @buffer: A pointer to a character array.
  * @start: A pointer to the start of buffer.
  * @len: The length of the string stored in buffer.
@@ -40,7 +40,7 @@ typedef struct buffer_sh
 } buffer_v;
 
 /**
- * struct converter_s - A new type defining a converter struct.
+ * struct converter_sh - A new type defining a converter struct.
  * @specifier: A character representing a conversion specifier.
  * @func: A pointer to a conversion function corresponding to specifier.
  */
@@ -51,7 +51,7 @@ typedef struct converter_sh
 			unsigned char, int, int, unsigned char);
 } converter_v;
 /**
- * struct flag_s - A new type defining a flags struct.
+ * struct flag_sh - A new type defining a flags struct.
  * @flag: A character representing a flag.
  * @value: The integer value of the flag.
  */

@@ -32,7 +32,7 @@ unsigned int change_octal(va_list args, buffer_v *output,
 	}
 
 	if (HASH_FLAG == 1 && digit != 0)
-	{	
+	{
 		ren += _memcpy(output, &zero, 1);
 	}
 	if (!(digit == 0 && prec == 0))

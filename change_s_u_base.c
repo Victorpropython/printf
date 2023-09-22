@@ -12,7 +12,7 @@
  *
  * Return: The number of bytes stored to the buffer.
  */
-unsigned int change_ubase(buffer_v *output, unsigned long int num, char *base,
+unsigned int convert_ubase(buffer_v *output, unsigned long int num, char *base,
 		unsigned char flags, int wid, int prec)
 {
 	unsigned int count, ren = 1;
@@ -63,7 +63,7 @@ unsigned int change_ubase(buffer_v *output, unsigned long int num, char *base,
  *
  * Return: The number of bytes stored to the buffer.
  */
-unsigned int change_sbase(buffer_v *output, long int num, char *base,
+unsigned int convert_sbase(buffer_v *output, long int num, char *base,
 		unsigned char flags, int wid, int prec)
 {
 	int count;
