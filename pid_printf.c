@@ -9,7 +9,7 @@
 unsigned int (*handle_specifiers(const char *specifier))(va_list, buffer_v *,
 	unsigned char, int, int, unsigned char)
 {
-	int j;
+	int i;
 	converter_v converters[] = {
 		{'c', convert_alpha},
 		{'s', convert_str},
@@ -29,11 +29,11 @@ unsigned int (*handle_specifiers(const char *specifier))(va_list, buffer_v *,
 
 	};
 
-	for (j = 0; converters[j].func; j++)
+	for (i = 0; converters[i].func; i++)
 	{
-		if (converters[j].specifier == *specifier)
+		if (converters[i].specifier == *specifier)
 		{
-			return (converters[j].func);
+			return (converters[i].func);
 		}
 	}
 	return (NULL);
