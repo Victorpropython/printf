@@ -12,7 +12,7 @@
  * Return: Numbers of chars printed
  */
 
-unsigned int convert_reverse(va_list args, buffer_t *output,
+unsigned int convert_reverse(va_list args, buffer_v *output,
 		unsigned char flags, int wid, int prec, unsigned char len)
 {
 	char *str, *null = "(null)";
@@ -55,7 +55,7 @@ unsigned int convert_reverse(va_list args, buffer_t *output,
  * @len: Size specifier
  * Return: Numbers of chars printed
  */
-unsigned int convert_rot13string(va_list args, buffer_t *output,
+unsigned int convert_rot13string(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 	char *str, *nul = "(null)";

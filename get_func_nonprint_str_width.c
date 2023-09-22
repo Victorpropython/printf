@@ -11,7 +11,7 @@
  * @len: Size specifier
  * Return: Number of chars printed
  */
-unsigned int convert_non_printable(va_list args, buffer_t *output,
+unsigned int convert_non_printable(va_list args, buffer_v *output,
 	unsigned char flags, int wid, int prec, unsigned char len)
 {
 	int count, ind;
@@ -56,7 +56,7 @@ unsigned int convert_non_printable(va_list args, buffer_t *output,
  *@count: the size of string
  *Return: the number of stored bytes
  */
-unsigned int print_string_width(buffer_t *output,
+unsigned int print_string_width(buffer_v *output,
 		unsigned char flags, int prec, int wid, int count)
 {
 	char side = ' ';
