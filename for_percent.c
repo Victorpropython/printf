@@ -1,3 +1,4 @@
+#include "main.h"
 /************************* PRINT PERCENT SIGN *************************/
 /**
  * convert_percent - Prints a percent sign

@@ -7,7 +7,7 @@
  *@wid: for width
  *Return: The number of bytes
  */
-unsigned int print_neg_width(buffer_t *output, unsigned int display,
+unsigned int print_neg_width(buffer_v *output, unsigned int display,
 		unsigned char flags, int wid)
 {
 	unsigned int ren = 0;
@@ -31,7 +31,7 @@ unsigned int print_neg_width(buffer_t *output, unsigned int display,
  *@wid: For width
  *Return: The number of bytes
  */
-unsigned int print_width(buffer_t *output, unsigned int display,
+unsigned int print_width(buffer_v *output, unsigned int display,
 		unsigned char flags, int wid)
 {
 	char side = ' ';
